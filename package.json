@@ -1,0 +1,82 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:prod": "vite --mode production",
+    "dev:test": "vite --mode test",
+    "build": "vite build --mode development",
+    "build:prod": "vite build --mode production",
+    "build:test": "vite build --mode test",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,vue}\" --fix",
+    "lint:style": "stylelint \"src/**/*.{css,scss,vue}\" --fix",
+    "lint:all": "npm run lint && npm run lint:style",
+    "test": "vitest",
+    "prepare": "husky install"
+  },
+  "browserslist": [
+    "Chrome >= 65",
+    "Safari >= 11",
+    "Firefox >= 60",
+    "Edge >= 16",
+    "iOS >= 11",
+    "Android >= 5"
+  ],
+  "dependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@vueuse/core": "^11.1.0",
+    "axios": "^1.7.7",
+    "core-js": "^3.38.1",
+    "dayjs": "^1.11.13",
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "pinia": "^2.2.4",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "@vitejs/plugin-legacy": "^5.4.2",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.29.1",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "mockjs": "^1.1.0",
+    "postcss-html": "^1.7.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.80.4",
+    "stylelint": "^16.10.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-prettier": "^5.0.2",
+    "stylelint-scss": "^6.8.1",
+    "unplugin-auto-import": "^0.18.3",
+    "unplugin-vue-components": "^0.27.4",
+    "vite": "^5.4.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vue-eslint-parser": "^9.4.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss,vue}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  }
+}
