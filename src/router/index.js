@@ -20,6 +20,24 @@ const routes = [
     meta: { requiresAuth: true, roles: ['user', 'admin'] },
   },
   {
+    path: '/image-preview/',
+    name: 'ImagePreview',
+    component: () => import('@/views/ImgPreview.vue'),
+    meta: { requiresAuth: true, roles: ['user', 'admin'] },
+  },
+  {
+    path: '/video-preview/',
+    name: 'VideoPreview',
+    component: () => import('@/views/VideoPreview.vue'),
+    meta: { requiresAuth: true, roles: ['user', 'admin'] },
+  },
+  {
+    path: '/audio-preview/',
+    name: 'AudioPreview',
+    component: () => import('@/views/AudioPreview.vue'),
+    meta: { requiresAuth: true, roles: ['user', 'admin'] },
+  },
+  {
     path: '/login',
     name: 'Login',
     component: Login,

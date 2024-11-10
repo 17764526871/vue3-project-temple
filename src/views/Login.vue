@@ -23,8 +23,8 @@ import { useUserStore } from '@/store/user.js';
 const router = useRouter();
 const userStore = useUserStore();
 
-const username = ref('');
-const password = ref('');
+const username = ref('admin');
+const password = ref('123456');
 
 const login = () => {
   // 模拟登录逻辑

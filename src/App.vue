@@ -3,7 +3,11 @@
     <nav>
       <router-link to="/">主页</router-link>
       |
-      <router-link to="/about">关于我们</router-link>
+      <router-link to="/image-preview">图片预览</router-link>
+      |
+      <router-link to="/video-preview">视频预览</router-link>
+      |
+      <router-link to="/audio-preview">音频预览</router-link>
       |
       <router-link v-if="!isAuthenticated" to="/login">登录</router-link>
       <span v-else @click="logout" style="cursor: pointer">登出</span>

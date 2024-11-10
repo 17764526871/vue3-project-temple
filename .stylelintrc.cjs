@@ -13,6 +13,12 @@ module.exports = {
     'scss/at-rule-no-unknown': true,
     'font-family-no-missing-generic-family-keyword': null,
     'font-family-no-duplicate-names': true,
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        ignorePseudoClasses: ['deep', 'v-deep'],
+      },
+    ],
   },
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
 };
